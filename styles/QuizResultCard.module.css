@@ -1,0 +1,22 @@
+.result {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px #dfdfdf, -2px -2px 5px #dfdfdf;
+    border-radius: 24px;
+    background-color: rgb(255, 255, 255);
+    min-width: 350px;
+    max-width: 450px;
+    padding: 30px 20px;
+    min-height: 500px;
+}
+
+.result h3 {
+    font-size: 28px;
+}
+.result h4 {
+    font-size: 22px;
+}

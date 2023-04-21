@@ -1,0 +1,114 @@
+.page {
+	min-height: 100vh;
+	padding: 0px 20px;
+	background-image: url("/seam.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title {
+	font-family: 'Anton', sans-serif;
+	font-size: 2rem;
+	margin-bottom: 10px;
+	letter-spacing: 6px;
+	font-weight: 500;
+	/* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+	text-align: center;
+}
+
+.container {
+	margin: auto;
+	max-width: 800px;
+	padding-top: 50px;
+}
+
+.todoList {
+	padding: 10px;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0.589);
+	height: 400px;
+	overflow: auto;
+}
+
+.todoItem {
+	display: flex;
+	align-items: center;
+	margin: 5px 0px 5px 0px;
+	background-color: rgba(255, 255, 255, 0.068);
+	min-height: 60px;
+}
+
+.todoOptions {
+	display: flex;
+	margin: 0px 20px 0px auto;
+}
+
+.todoOptions button {
+	min-width: 100px;
+}
+
+.buttonHolder {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.btn {
+	box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.425);
+	padding: 10px 15px;
+	border: none;
+	background-color: white;
+	margin-left: 10px;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+.inp {
+	padding: 10px 15px;
+	outline: none;
+	border: none;
+	box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.425);
+	background-color: white;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+.todoText {
+	padding-left: 10px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.rounded {
+	border-radius: 8px;
+}
+
+@media only screen and (max-width:450px) {
+	.todoText {
+		margin: 0px;
+		text-align: center;
+	}
+
+	.todoItem {
+		flex-direction: column;
+	}
+
+	.todoOptions {
+		margin: 20px 0px;
+	}
+
+	.buttonHolder {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	.buttonHolder>* {
+		margin: 0px;
+		margin-top: 10px;
+	}
+
+	.buttonHolder .btn {
+		margin-right: 10px;
+	}
+}
