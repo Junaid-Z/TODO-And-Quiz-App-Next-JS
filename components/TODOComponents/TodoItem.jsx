@@ -1,7 +1,7 @@
 import React from 'react'
 import { updateData } from '@/Functions/firebaseFunctions';
 import { deleteData } from '@/Functions/firebaseFunctions';
-import todoStyles from '../styles/Todo.module.css'
+import todoStyles from '@/styles/Todo.module.css'
 
 function TodoItem({ todo, setTodos, index }) {
 	return (

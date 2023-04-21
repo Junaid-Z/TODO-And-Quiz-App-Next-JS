@@ -7,8 +7,8 @@ import styles from '@/styles/QuizCard.module.css'
 import ResultCard from '@/components/QuizComponents/ResultCard'
 import { getData, setData } from '@/Functions/firebaseFunctions';
 import { useEffect } from 'react'
+import Loader from '@/components/Loader'
 // import { questions as myQuestions } from './data'
-import loaderStyles from '@/styles/Loader.module.css'
 
 export const QuizAppContext = useQuizHooks()
 
@@ -45,7 +45,7 @@ const QuizApp = () => {
 						<QuizCard card={questions[currentQuestion]} /> :
 						<ResultCard questions={questions} />
 					:
-					<span className={loaderStyles.loader}></span>
+					<Loader />
 				}
 			</div>
 		</QuizAppContext.Provider>
