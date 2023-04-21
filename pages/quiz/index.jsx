@@ -8,7 +8,6 @@ import ResultCard from '@/components/QuizComponents/ResultCard'
 import { getData, setData } from '@/Functions/firebaseFunctions';
 import { useEffect } from 'react'
 import Loader from '@/components/Loader'
-// import { questions as myQuestions } from './data'
 
 export const QuizAppContext = useQuizHooks()
 
